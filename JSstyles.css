@@ -31,7 +31,7 @@ body {
 
 #button1 {
   position:relative;
-  left:45%;
+  left:45vw;
   font-size:20px;
   padding:5px;
   text-align:center;
@@ -39,7 +39,7 @@ body {
 
 #button2 {
   position:relative;
-  left:45%;
+  left:45vw;
   font-size:20px;
   padding:5px;
   text-align:center;
