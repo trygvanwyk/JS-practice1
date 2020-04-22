@@ -45,3 +45,12 @@ body {
   padding:5px;
   text-align:center;
 }
+
+#b1 {
+  background-color:#fff
+}
+
+#button3 {
+  position:relative;
+  left:45vw;
+}

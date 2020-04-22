@@ -9,7 +9,7 @@
   <meta charset="UTF-8">
   <script src="JSfunctions.js"></script>
 </head>
-<body>
+<body id="b1">
 <h1 class="h1">JavaScript Practice</h1>
 <div id="d1">
   <p id="p1">Change this paragraph.</p>
@@ -17,7 +17,34 @@
   <button class="p1button" id="button2" type="button" onclick="revertParagraph()">Revert</button>
 </div>
 <br>
-
+<div id="div1" style="background-color:lightgreen" onmouseover="mouseOverDiv()" onmouseout="mouseOffDiv()">
+  <p id="p2"></p2>
+  <script>
+  var person = {
+    firstName: "Tryg",
+    lastName: "van Wyk",
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  document.getElementById("p2").innerHTML = person.fullName();
+  </script>
+  <br>
+  <p id="p3">Date hidden</p>
+  <br>
+  <script>
+  function displayDate() {
+    document.getElementById('p3').innerHTML = Date();
+    }
+  function hideDate() {
+    document.getElementById('p3').innerHTML = "Date hidden";
+  }
+  </script>
+  <button type="button" onclick="displayDate()">Show date</button>
+  <button type="button" onclick="hideDate()">Hide date</button>
+</div>
+<br>
+<button class="p1button" id="button3" type="button" onclick="changeButton()">Change button</button>
 
 
 

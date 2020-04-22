@@ -4,7 +4,18 @@ function changeParagraph() {
 function revertParagraph() {
   document.getElementById("p1").innerHTML = "Change this paragraph."
 }
-function toCelsius(f) {
-  return (5/9) * (f-32);
+function mouseOverDiv() {
+  document.getElementById('div1').style.backgroundColor="red"
 }
-document.getElementById("p2").innerHTML = toCelsius(32);
+function mouseOffDiv() {
+  document.getElementById('div1').style.backgroundColor = "lightgreen"
+  document.getElementById('b1').style.backgroundColor = "#fff"
+}
+function changeButton() {
+  document.getElementById('button3').innerHTML = "Revert button";
+  document.getElementById('button3').onclick = revertButton;
+}
+function revertButton() {
+  document.getElementById('button3').innerHTML = "Change button";
+  document.getElementById('button3').onclick = changeButton;
+}
