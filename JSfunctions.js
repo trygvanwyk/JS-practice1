@@ -19,3 +19,10 @@ function revertButton() {
   document.getElementById('button3').innerHTML = "Change button";
   document.getElementById('button3').onclick = changeButton;
 }
+var person = {
+  firstName: "Tryg",
+  lastName: "van Wyk",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
