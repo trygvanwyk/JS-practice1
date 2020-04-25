@@ -1,3 +1,11 @@
+var numbers = [1,2,3,4,5,6,7,8,9,10,11,300,12,13,14,15,16,17,18,19,20]
+function sortNumbers() {
+  numbers.sort(function(a, b){return a-b})
+  document.getElementById("p4").innerHTML = numbers;
+}
+
+
+
 function changeParagraph() {
   document.getElementById("p1").innerHTML = "Paragraph changed."
 }
